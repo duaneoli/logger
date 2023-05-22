@@ -1,6 +1,6 @@
 {
   "name": "@do/logger",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "author": "Duane Oliveira",
   "description": "Padrão de logs, afim de tornar facil a identificação no grafana",
   "main": "dist/index.js",
