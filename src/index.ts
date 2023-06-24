@@ -1,2 +1,2 @@
+export * from './Cmd'
 export * from './Logger'
-export { Logger } from './Logger'
