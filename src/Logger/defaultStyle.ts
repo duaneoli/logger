@@ -2,7 +2,7 @@ import { TextColor } from '../Cmd/TextColor'
 import { LevelStyle } from './Level'
 
 const dateStyle: LevelStyle = {
-  date: { dateFormat: new Date().toJSON(), style: { textColor: TextColor.GRAY } },
+  date: { style: { textColor: TextColor.GRAY } },
 }
 
 export type LevelType = 'startRoute' | 'finishRoute' | 'startJob' | 'finishJob' | 'trace' | 'debug' | 'info' | 'warn' | 'error'

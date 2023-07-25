@@ -25,12 +25,14 @@ export class LoggerLevel {
     if (textColor) cmd.textColor(textColor)
     if (textStyle) cmd.textStyle(textStyle)
   }
+
   constructor(level: string, message: string, options: LevelStyle, separator = ' ') {
     const cmd = new Cmd()
     if (options.date) {
       const { dateFormat, style } = options.date
       if (style) this.applyStyle(cmd, style)
       if (dateFormat) cmd.text(dateFormat).text(separator)
+      else cmd.text(new Date().toJSON()).text(separator)
     } else cmd.text(new Date().toJSON()).text(separator)
     cmd.reset()
     if (options.level) this.applyStyle(cmd, options.level)
